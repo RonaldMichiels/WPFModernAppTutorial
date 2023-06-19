@@ -79,6 +79,8 @@ T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\Styles\UIColors.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\CustomControl\BindablePasswordBox.g.cs
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\MainWindow.g.cs
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\CustomerView.g.cs
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\HomeView.g.cs
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\LoginView.g.cs
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\MainView.g.cs
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\App.g.cs
@@ -89,6 +91,8 @@ T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\App.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\CustomControl\BindablePasswordBox.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\MainWindow.baml
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\CustomerView.baml
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\HomeView.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\LoginView.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\MainView.baml
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\WPFModernAppTutorial.g.resources

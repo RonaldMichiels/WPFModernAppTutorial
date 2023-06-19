@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using WPFModernAppTutorial.Model;
 
 namespace WPFModernAppTutorial.Repository
@@ -58,7 +55,7 @@ namespace WPFModernAppTutorial.Repository
                 command.Connection = connection;
                 command.CommandText = "select * from [User] where username = @username";
                 command.Parameters.Add("@username", SqlDbType.NVarChar).Value = username;
-                using(var reader = command.ExecuteReader())
+                using (var reader = command.ExecuteReader())
                 {
                     if (reader.Read())
                     {

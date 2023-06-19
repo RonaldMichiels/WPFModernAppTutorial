@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Security;
 using System.Security.Principal;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using WPFModernAppTutorial.Model;
 using WPFModernAppTutorial.Repository;
@@ -22,7 +18,8 @@ namespace WPFModernAppTutorial.ViewModel
 
         private IUserRepository userRepository;
 
-        public string Username { 
+        public string Username
+        {
             get => _username;
             set
             {
@@ -30,7 +27,8 @@ namespace WPFModernAppTutorial.ViewModel
                 OnPropertyChanged(nameof(Username));
             }
         }
-        public SecureString Password { 
+        public SecureString Password
+        {
             get => _password;
             set
             {
@@ -38,7 +36,8 @@ namespace WPFModernAppTutorial.ViewModel
                 OnPropertyChanged(nameof(Password));
             }
         }
-        public string ErrorMessage { 
+        public string ErrorMessage
+        {
             get => _errorMessage;
             set
             {
@@ -46,8 +45,9 @@ namespace WPFModernAppTutorial.ViewModel
                 OnPropertyChanged(nameof(ErrorMessage));
             }
         }
-        public bool IsViewVisible { 
-            get => _isViewVisible; 
+        public bool IsViewVisible
+        {
+            get => _isViewVisible;
             set
             {
                 _isViewVisible = value;
@@ -80,7 +80,7 @@ namespace WPFModernAppTutorial.ViewModel
         private void ExecuteLoginCommand(object obj)
         {
             var isValidUser = userRepository.AuthenticateUser(new NetworkCredential(Username, Password));
-            if(isValidUser)
+            if (isValidUser)
             {
                 Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(Username), null);
                 IsViewVisible = false;
