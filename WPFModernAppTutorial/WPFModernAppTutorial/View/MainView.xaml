@@ -26,6 +26,10 @@
         <DataTemplate DataType="{x:Type viewModel:CustomerViewModel}">
             <local:CustomerView></local:CustomerView>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModel:WCFViewModel}">
+            <local:WCFView></local:WCFView>
+        </DataTemplate>
     </Window.Resources>
 
     <Border CornerRadius="10"
@@ -90,10 +94,11 @@
                     </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
-                                 Tag="{StaticResource color3}">
+                                 Tag="{StaticResource color3}"
+                                 Command="{Binding ShowWCFViewCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Truck" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Orders" Style="{StaticResource menuButtonText}"/>
+                            <fa:IconImage Icon="Wallet" Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="WCF Tax Services" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 
@@ -108,8 +113,8 @@
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color5}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Wallet" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Finances" Style="{StaticResource menuButtonText}"/>
+                            <fa:IconImage Icon="Truck" Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="Logistics" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 

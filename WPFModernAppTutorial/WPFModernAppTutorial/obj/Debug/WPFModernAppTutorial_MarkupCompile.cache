@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\App.xaml
-8158468039
+9-1554591515
 1-714637053
-21-1670815618
-157-851482614
-CustomControl\BindablePasswordBox.xaml;MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\CustomerView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;
+24-1975895104
+158-1772288733
+CustomControl\BindablePasswordBox.xaml;MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\CustomerView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;View\WCFView.xaml;
 
 False
 

@@ -36,5 +36,10 @@ namespace WPFModernAppTutorial.View
         {
 
         }
+
+        private void btnLogin_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

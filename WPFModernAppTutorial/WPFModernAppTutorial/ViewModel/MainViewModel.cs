@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using System;
 using System.Threading;
 using System.Windows;
 using System.Windows.Input;
@@ -58,6 +59,7 @@ namespace WPFModernAppTutorial.ViewModel
 
         public ICommand ShowHomeViewCommand { get; }
         public ICommand ShowCustomerViewCommand { get; }
+        public ICommand ShowWCFViewCommand { get; }
 
 
         public MainViewModel()
@@ -67,10 +69,18 @@ namespace WPFModernAppTutorial.ViewModel
 
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
             ShowCustomerViewCommand = new ViewModelCommand(ExecuteShowCustomerViewCommand);
+            ShowWCFViewCommand = new ViewModelCommand(ExecuteShowWCFViewCommand);
 
             ExecuteShowHomeViewCommand(null);
 
             LoadCurrentUserData();
+        }
+
+        private void ExecuteShowHomeViewCommand(object obj)
+        {
+            CurrentChildView = new HomeViewModel();
+            Caption = "Dashboard";
+            Icon = IconChar.Home;
         }
 
         private void ExecuteShowCustomerViewCommand(object obj)
@@ -80,11 +90,11 @@ namespace WPFModernAppTutorial.ViewModel
             Icon = IconChar.UserGroup;
         }
 
-        private void ExecuteShowHomeViewCommand(object obj)
+        private void ExecuteShowWCFViewCommand(object obj)
         {
-            CurrentChildView = new HomeViewModel();
-            Caption = "Dashboard";
-            Icon = IconChar.Home;
+            CurrentChildView = new WCFViewModel();
+            Caption = "WCF Tax Services";
+            Icon = IconChar.Wallet;
         }
 
         private void LoadCurrentUserData()

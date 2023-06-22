@@ -87,7 +87,7 @@ namespace WPFModernAppTutorial.ViewModel
             }
             else
             {
-                ErrorMessage = "* Invalid usernaeme or password";
+                ErrorMessage = "* Invalid username or password";
             }
         }
 

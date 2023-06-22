@@ -102,3 +102,5 @@ T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\WPFModernAppTutorial.csproj.CopyComplete
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\WPFModernAppTutorial.exe
 T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\WPFModernAppTutorial.pdb
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\WCFView.g.cs
+T:\_Repositories\WPFModernAppTutorial\WPFModernAppTutorial\WPFModernAppTutorial\obj\Debug\View\WCFView.baml

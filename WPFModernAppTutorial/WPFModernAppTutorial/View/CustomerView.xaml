@@ -36,7 +36,7 @@
                              Margin="5,5,0,0"></TextBox>
             </StackPanel>
             <Button Grid.Column="1"
-                            Command="{Binding LoginCommand}"                            
+                            Command=""                            
                             Content="Search"                            
                             FontSize="12"
                             FontFamily="Montserrat"
