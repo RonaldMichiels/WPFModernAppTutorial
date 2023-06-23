@@ -3,10 +3,136 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             xmlns:viewModel="clr-namespace:WPFModernAppTutorial.ViewModel"
              xmlns:local="clr-namespace:WPFModernAppTutorial.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Image Source="/Images/dashboard-template.png"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- Content -->
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                CornerRadius="12"
+                Margin="10, 10, 10, 10"
+                >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 1" EndPoint="1, 0">
+                    <GradientStop Color="#784DFD" Offset="0"></GradientStop>
+                    <GradientStop Color="#906cfc" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Grid.Column="0"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    >
+                <fa:IconImage Icon="UserGroup"
+                                          Height="50"
+                                          Width="50"
+                                          Foreground="White"/>
+                <TextBlock Text="780 Users"
+                                       Foreground="White"
+                                       FontSize="50"
+                                       FontFamily="Montserrat"
+                                       FontWeight="Medium"
+                                       Margin="25,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="0"
+                Grid.Column="1"
+                CornerRadius="12"
+                Margin="10, 10, 10, 10"
+                >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 1" EndPoint="1, 0">
+                    <GradientStop Color="#FB539B" Offset="0"></GradientStop>
+                    <GradientStop Color="#fc80b6" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Grid.Column="0"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    >
+                <fa:IconImage Icon="Truck"
+                                          Height="50"
+                                          Width="50"
+                                          Foreground="White"/>
+                <TextBlock Text="2347 Sales"
+                                       Foreground="White"
+                                       FontSize="50"
+                                       FontFamily="Montserrat"
+                                       FontWeight="Medium"
+                                       Margin="25,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                CornerRadius="12"
+                Margin="10, 10, 10, 10"
+                >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 1" EndPoint="1, 0">
+                    <GradientStop Color="#4ADAEC" Offset="0"></GradientStop>
+                    <GradientStop Color="#88eefc" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Grid.Column="0"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    >
+                <fa:IconImage Icon="Box"
+                                          Height="50"
+                                          Width="50"
+                                          Foreground="White"/>
+                <TextBlock Text="1234 Stock"
+                                       Foreground="White"
+                                       FontSize="50"
+                                       FontFamily="Montserrat"
+                                       FontWeight="Medium"
+                                       Margin="25,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1"
+                Grid.Column="1"
+                CornerRadius="12"
+                Margin="10, 10, 10, 10"
+                >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 1" EndPoint="1, 0">
+                    <GradientStop Color="#FFC047" Offset="0"></GradientStop>
+                    <GradientStop Color="#fccf7b" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Grid.Column="0"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    >
+                <fa:IconImage Icon="Dollar"
+                                          Height="50"
+                                          Width="50"
+                                          Foreground="White"/>
+                <TextBlock Text="7,366 Profit"
+                                       Foreground="White"
+                                       FontSize="50"
+                                       FontFamily="Montserrat"
+                                       FontWeight="Medium"
+                                       Margin="25,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+
     </Grid>
 </UserControl>

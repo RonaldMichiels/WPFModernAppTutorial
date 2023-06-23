@@ -161,10 +161,13 @@
     <Compile Include="CustomControl\BindablePasswordBox.xaml.cs">
       <DependentUpon>BindablePasswordBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\ICustomerRepository.cs" />
     <Compile Include="Model\IUserRepository.cs" />
     <Compile Include="Model\UserAccountModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="MyWCFLibService.cs" />
+    <Compile Include="Repository\CustomerRepository.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="ViewModel\CustomerViewModel.cs" />
@@ -270,6 +273,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\dashboard-template.png" />
+    <Content Include="Scripts\CustomersDBCreationScript.sql" />
     <Content Include="Scripts\LoginDBCreationScript.sql" />
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
